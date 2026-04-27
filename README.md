@@ -119,6 +119,10 @@ The rotary selector determines the behavior of the TP3 node, allowing the traine
 
 The lid engraving doubles as a quick-reference card: test-point flow (TP1 → TP2 → TP3 → TP4), system flow (24 V → CB → PWR SW → FAULT SELECTION → LOAD → GND), and the reminder that continuity may not read through the load — voltage measurements should be used to confirm operation.
 
+![V1.4 Lid Engraving — Installed](images/v1_4_lid_engraving_installed.jpg)
+
+The reference plate installed in the lid of the V1.4 enclosure — visible to the trainee while the unit is open and powered.
+
 ---
 
 ## Training Use Case
@@ -195,19 +199,32 @@ A formal V2 design brief will be published in `docs/V2_design_brief.md`.
 
 ## Prototype Photos
 
-The physical enclosure and panel layout are unchanged from V1.3; the V1.4 revisions are internal component additions on the rotary-selector paths.
+The physical enclosure and front-panel layout are unchanged from V1.3; the V1.4 revisions are the engraved lid quick-reference and the internal contact-protection components on the rotary-selector paths.
 
-### Front Panel
-![TACTRACE Front Panel](images/v1_3_front_panel_primary.jpeg)
+### V1.4 Trainer — Lid Engraved, Front Panel Powered
+![TACTRACE V1.4 — engraved lid and powered front panel](images/v1_4_front_panel_engraving.jpg)
 
-### Front Panel — Powered
-![Front Panel Powered](images/v1_3_front_panel_powered.jpeg)
+### V1.4 Internal Wiring
+![V1.4 Internal Wiring — Underside of Front Panel](images/v1_4_panel_wiring_underside.jpg)
 
-### Internal Wiring
-![Internal Wiring](images/v1_3_internal_wiring_overview.jpeg)
+### V1.4 Perfboard — Component Side
+![V1.4 Perfboard — Top](images/v1_4_perfboard_top.jpg)
 
-### Perfboard
-![Perfboard](images/v1_3_perfboard_top.jpeg)
+### V1.4 Perfboard — Solder Side
+![V1.4 Perfboard — Bottom](images/v1_4_perfboard_bottom.jpg)
+
+### Earlier Revision Reference (V1.3)
+The V1.3 prototype shots below are retained for revision-history context — the V1.4 trainer above is the current build.
+
+<details>
+<summary>V1.3 prototype photos</summary>
+
+![V1.3 Front Panel](images/v1_3_front_panel_primary.jpeg)
+![V1.3 Front Panel — Powered](images/v1_3_front_panel_powered.jpeg)
+![V1.3 Internal Wiring](images/v1_3_internal_wiring_overview.jpeg)
+![V1.3 Perfboard](images/v1_3_perfboard_top.jpeg)
+
+</details>
 
 ---
 
