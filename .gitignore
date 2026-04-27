@@ -47,5 +47,7 @@ ehthumbs.db
 desktop.ini
 *.tmp
 *.log
+
+# Local-only project files
 DEPLOY_NOTES.md
 images_originals_backup/

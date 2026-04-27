@@ -6,7 +6,7 @@ It is published with the repo so that reviewers can see the full V1.4 paper trai
 
 ## Current contents
 
-- [`SCHEMATIC_V1_4_REGENERATION.md`](SCHEMATIC_V1_4_REGENERATION.md) — flags `images/v1_4_schematic.png` as the simplified V1.0/V1.2 topology pending Week 2 regeneration from the V1.4 KiCad source. Includes regeneration steps and verification checklist.
+- [`SCHEMATIC_V1_4_REGENERATION.md`](SCHEMATIC_V1_4_REGENERATION.md) — schematic open-item tracker. The detailed V1.4 schematic is now published at [`../hardware/schematics/v1_4_schematic_detailed.pdf`](../hardware/schematics/v1_4_schematic_detailed.pdf) and embedded in the project README. The remaining items are a "Resister" → "Resistor" typo correction, reference-designator additions (R1, C1, …), and peer-review confirmation of the 100 Ω routing intent.
 
 ## What does not belong here
 

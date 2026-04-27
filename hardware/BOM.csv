@@ -1,0 +1,34 @@
+TACTRACE Trainer Bill of Materials
+As of Apr 26 2026 | Current build: V1.4 Prototype Complete — Validation Ongoing
+
+Item,Qty Used,Category,Component,Specification,Manufacturer / Model,Source,Package Qty,Package Cost,Unit Cost,Extended Cost,Status,Version Added,Notes
+1,1,Enclosure,Pelican 1120 Case,Portable hard protective case,Pelican 1120,Supply Procurement,1,30.32,30.32,30.32,Installed,V1.1,Primary enclosure
+2,1,Electrical,Rotary Selector Switch,1P4T rotary selector switch,Not specified,Amazon,2,12.48,6.24,6.24,Installed,V1.0,Fault selector; 2-pack purchase
+3,1,Electrical,Circuit Breaker,5A pull-type breaker,Klixon 2TC2-5,Supply Procurement,1,33.37,33.37,33.37,Installed,V1.2,Aircraft-style circuit protection
+4,1,Electrical,Power Switch,2-position toggle switch; 5A 125VAC / 3A 250VAC,MST-1,Donated,1,0,0,0,Installed,V1.0,Main power control
+5,1,Electrical,Power Supply,24V 3A 72W AC/DC adapter; 5.5x2.1mm output,Not specified,Amazon,1,16.99,16.99,16.99,Installed,V1.0,External power source
+6,4,Electrical,Banana Jacks,4mm panel-mount banana jacks,Not specified,Donated,4,0,0,0,Installed,V1.2,TP1 TP2 TP3 TP4
+7,1,Electrical,LED Indicator,10mm 12-24V AC/DC metal panel LED,Not specified,Amazon,12,7.99,0.6658,0.6658,Installed,V1.0,Load indicator; 12-pack purchase
+8,1,Electrical,Load Resistor,1k ohm 1W ±1% metal film resistor,Not specified,Amazon,100,7.41,0.0741,0.0741,Installed,V1.0,LED/load path; bulk pack
+9,1,Electrical,Current-Limit Resistor,100 ohm resistor,Not specified,Kit,1,0,0,0,Installed,V1.4,Position 4 path; wattage rating TBD
+10,1,Electrical,Capacitor,100nF ceramic capacitor,Not specified,Kit,1,0,0,0,Installed,V1.4,Connected from TP3 node to ground for transient suppression; tolerance TBD
+11,1,Electrical,Perfboard,Double-sided prototype PCB board; 2 cm x 8 cm,Not specified,Amazon,32,7.99,0.2497,0.2497,Installed,V1.0,Main circuit board; bulk pack
+12,1,Electrical,DC Barrel Jack,Female threaded panel adapter; 5.5mm x 2.1mm; 18AWG leads,Not specified,Amazon,8,10.99,1.3738,1.3738,Installed,V1.0,Power input with dustproof plug
+13,1,Mechanical,Hookup Wire,Assorted internal wiring,Not specified,Existing Stock,1,0,0,0,Installed,V1.0,Internal harness wiring
+14,1,Mechanical,Mounting Hardware,M2 screws nuts and spacers,Not specified,Existing Stock,1,0,0,0,Installed,V1.0,Perfboard and component mounting
+15,1,Labeling,Panel Engraving,Lid quick-reference graphic,In-house design,In-House,1,0,0,0,Installed,V1.4,Training reference plate and system flow guide
+
+V2 Candidate Parts (planning only — not part of V1.4 build)
+Item,Category,Candidate Component,Purpose,Likely Version,Status,Cost Basis,Notes
+1,Future Upgrade,MOSFET-based solid-state fault matrix,Replace mechanical selector with controlled switching,V2,Planned,TBD,"Evaluate current rating, gate drive, fault isolation, thermal margin"
+2,Future Upgrade,Microcontroller control board,"Scenario logic, randomization, instructor mode",V2,Planned,TBD,Could support timed/intermittent faults and student evaluation modes
+3,Future Upgrade,Aircraft-style cannon connectors,More realistic maintainer interface,V2,Planned,TBD,"Connector selection should balance realism, cost, durability, and wiring complexity"
+4,Future Upgrade,Improved enclosure/panel layout,Serviceability and instructor usability,V2,Planned,TBD,SolidWorks transition planned before end of Week 2
+
+Notes & Validation Items
+Topic,Current Assumption,Validation Needed,Repo Location
+Capacitor,100nF ceramic from TP3 node to ground,Confirm tolerance and voltage rating,hardware/BOM.csv
+100 ohm resistor,On Position 4 short-to-power path,Confirm wattage rating and precise placement in detailed schematic,hardware/BOM.csv
+Costs,Pack costs prorated into unit cost where package quantity is known,Confirm vendor receipts for exact prices,hardware/BOM.csv
+Donated/stock parts,Cost entered as $0 for build-cost tracking,Optional replacement value can be added later,hardware/BOM.csv
+Cost Method,Estimated Cost Used in Build prorates package purchases by quantity used; Total Package Spend reflects full package cost in BOM rows.,Review receipts before publication if exact financial accuracy matters.,BOM summary

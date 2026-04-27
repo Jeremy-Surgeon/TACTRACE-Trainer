@@ -20,10 +20,51 @@ TACTRACE follows a versioned hardware revision scheme: V1.0 → V1.4 → V2.x.
 - Rotary selector standardized as **1P4T rotary selector switch** in all project documentation.
 
 ### Notes
-- The simplified V1.4 schematic shows the topology at a block level; the V1.4 contact-protection components (100 nF from TP3 to GND, 100 Ω on the Pos 4 path) are not drawn individually in that view. The detailed V1.4 schematic will be published in `hardware/` (Week 2).
 - V1.4 contact-protection components reduce, but do not eliminate, switching transients on the rotary contacts. Quantitative validation under measured load is pending — flagged in the README as **"Needs peer review."**
-- Precise schematic placement of the 100 Ω on the Pos 4 path (source-side vs. contact-side of the rotary) will be confirmed in the Week 2 detailed-schematic publication.
 - TACTRACE remains a bench-top trainer only; **no aircraft-airworthiness certification is claimed or implied**.
+
+---
+
+## [V1.4 Week 2 — Revision Pass] — 2026-05-01 — PII Masking, Quickstart Procedure, BOM Correction
+
+### Added
+- Two additional avionics-maintainer responses to the initial peer-feedback round, raising the sample to **n = 5** (two 3-Level Apprentices, two 5-Level Journeymen, one 7-Level Craftsman).
+
+### Changed
+- **`docs/TACTRACE_User_Feedback_Questionnaire.csv`** — surveyor identifying information masked. Names removed (responses listed as R1-R5), rank column removed, timestamps truncated to date only, AFSC / Career Field normalized to "Avionics" for all reviewers.
+- **`docs/Peer_Feedback_Summary.md`** — updated to *n* = 5; respondent mix corrected to all-Avionics; reviewer headline ratings refreshed.
+- **`docs/Quickstart.md`** — diagnostic procedure rewritten to make TP4 (GND) the explicit voltmeter reference, drop the implicit "voltage flows linearly down the chain" framing, and emphasize **comparison-based** troubleshooting. Added the V1.4 teaching note that **TP3 may remain energized in Pos 4 with the main switch off**.
+- **`hardware/BOM.csv`** — perfboard specification confirmed at **2 cm x 8 cm** (was "2cm x 8cm assumed"); the matching Notes & Validation entry for perfboard dimensions is removed since it's no longer pending.
+- **`hardware/BOM.pdf`** — regenerated from the corrected CSV.
+- **`README.md`** — Validation & Initial Peer Feedback section refreshed to *n* = 5 with corrected respondent mix; deliverables table updated.
+
+---
+
+## [V1.4 Week 2] — 2026-04-29 — Hardware & Documentation Publication
+
+### Added
+- **Detailed V1.4 schematic** ([`hardware/schematics/v1_4_schematic_detailed.pdf`](hardware/schematics/v1_4_schematic_detailed.pdf)) — drawn at the component level with the 100 nF cap, 100 Ω resistor, 1P4T rotary positions (POS1 NORMAL / POS2 OPEN / POS3 SHORT GND / POS4 SHORT PWR), and TP1-TP4 banana-jack test points individually labeled.
+- **Simplified V1.4 schematic** ([`hardware/schematics/v1_4_schematic_simplified.pdf`](hardware/schematics/v1_4_schematic_simplified.pdf)) — block-level orientation view.
+- **V1.4 KiCad source** ([`hardware/kicad/`](hardware/kicad/)) — `.kicad_pro` plus the V1.4 simple and full schematic sheets.
+- **Bill of materials**, machine- and human-readable: [`hardware/BOM.csv`](hardware/BOM.csv) and [`hardware/BOM.pdf`](hardware/BOM.pdf). Includes V1.4 line items (100 nF cap, 100 Ω resistor, lid engraving), V2 candidate parts on a separate sheet, and a Notes & Validation Items table.
+- **V1.4 Quickstart** ([`docs/Quickstart.md`](docs/Quickstart.md)) — one-page reference for a maintainer who has never seen the device, including a teaching note on why TP3 still energizes in Pos 4 with the main switch off.
+- **V1 Training Guide PDF** carried over as the interim training reference ([`docs/TACTRACE_V1_Training_Guide.pdf`](docs/TACTRACE_V1_Training_Guide.pdf)). The V1.4-revised guide that maps the V1 three-test-point set to the V1.4 four-test-point set is in progress.
+- **User-feedback questionnaire** ([`docs/TACTRACE_User_Feedback_Questionnaire.csv`](docs/TACTRACE_User_Feedback_Questionnaire.csv)) — survey instrument for collecting trainee feedback.
+- **Initial peer-feedback summary** ([`docs/Peer_Feedback_Summary.md`](docs/Peer_Feedback_Summary.md)) — five responses from avionics maintainers (two 3-Level Apprentice, two 5-Level Journeyman, one 7-Level Craftsman); preliminary, not a validation study. Surveyor identifying information masked in the underlying questionnaire CSV.
+- README **Hardware & Documentation Deliverables** table, **Validation & Initial Peer Feedback** section, and **Enclosure Status** section.
+
+### Changed
+- README now embeds the **detailed** V1.4 schematic inline, replacing the simplified topology image as the canonical schematic figure.
+- Hardware folder structure populated to match the layout described in [`hardware/README.md`](hardware/README.md): `kicad/`, `schematics/`, `BOM.csv`, `BOM.pdf`.
+- The `archive/SCHEMATIC_V1_4_REGENERATION.md` regeneration TODO is now superseded for the inline image (resolved by `images/v1_4_schematic_detailed.png`); reference designators on V1.4 components remain pending — see the file itself.
+
+### Deferred
+- **Enclosure CAD** is intentionally deferred. The project is transitioning from FreeCAD to SolidWorks; the SolidWorks license is pending. The `hardware/enclosure/` folder is reserved and will be populated in a later revision.
+- A full V1.4-revised training guide remains in progress. The V1 PDF is shipped as interim, and the V1.4 quickstart bridges the gap.
+
+### Notes
+- Initial peer feedback (n=3) indicates the trainer was usable and the test-point layout was clear to the reviewers. It does **not** establish training effectiveness across a representative cohort.
+- "Resister" → "Resistor" typo corrected in the schematic source. Post-release housekeeping (reference designators, peer-review confirmation of the 100 Ω routing, component-rating confirmation) is tracked in [`archive/SCHEMATIC_V1_4_REGENERATION.md`](archive/SCHEMATIC_V1_4_REGENERATION.md).
 
 ---
 
