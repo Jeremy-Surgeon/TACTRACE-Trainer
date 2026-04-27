@@ -1,0 +1,51 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Apple Pages / iWork lock + backup
+.~lock.*
+*.pages.bak
+
+# KiCad — backups, autosaves, lock files, fp cache
+*-backups/
+*-bak
+*.kicad_pcb-bak
+*.kicad_sch-bak
+_autosave-*
+*.kicad_prl
+fp-info-cache
+**/*.kicad_lck
+
+# FreeCAD — backups
+*.FCBak
+*.FCStd1
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# Node / build artifacts (if added later)
+node_modules/
+dist/
+build/
+
+# Editors / IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS / archive junk
+Thumbs.db
+ehthumbs.db
+desktop.ini
+*.tmp
+*.log
+DEPLOY_NOTES.md
+DEPLOY_NOTES.md

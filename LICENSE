@@ -1,0 +1,51 @@
+MIT License
+
+Copyright (c) 2026 Jeremy Surgeon
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+
+---
+
+Scope clarification
+-------------------
+
+For the avoidance of doubt, the MIT License terms above also cover, on the
+same basis:
+
+- Hardware design files (KiCad schematic, KiCad PCB, FreeCAD enclosure
+  models, exported PDFs and SVGs, panel-engraving art)
+- Training and instructional documentation (trainee worksheets, instructor
+  references, design briefs, quickstart guides)
+- Photographs, schematic images, and panel artwork contained in this
+  repository
+
+You may use, modify, and redistribute these materials under the same terms,
+provided the copyright notice above is preserved.
+
+---
+
+Disclaimer
+----------
+
+TACTRACE is an independent training device. It is NOT certified, qualified,
+or approved for use on or with airworthy aircraft. It is intended solely for
+bench-top training of electrical fault-isolation skills. The author makes no
+representation regarding airworthiness, military qualification, or fitness
+for any operational use beyond the educational use described in the
+project README.
