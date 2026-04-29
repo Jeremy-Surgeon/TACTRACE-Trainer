@@ -189,7 +189,7 @@ V1.4 is the final mechanical-switching revision. V2 transitions to a solid-state
 - **Microcontroller-controlled** scenario selection
 - **16+ programmable faults**, including intermittent and time-based conditions
 - Instructor-side scenario presets with **randomized fault delivery** for evaluation
-- **Aircraft-style cannon connectors** to mirror real flight-line interfaces
+- **Aircraft-style cannon plug connectors** to mirror real flight-line interfaces
 - Improved enclosure layout, serviceability, and instrumentation
 - Long-term: instructor-controlled training mode with student-evaluation logging, modular expansion across multiple wire systems, scalable deployable platform for squadrons, schoolhouses, and maintenance training units
 
